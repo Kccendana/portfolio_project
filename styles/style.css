@@ -21,6 +21,10 @@
   --accent8-color: #fff5e1;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   background-color: var(--background-color);
   min-width: 375px;
@@ -36,6 +40,11 @@ body {
   font-weight: 400;
 }
 
+.font4 {
+  font-family: var(--font4);
+  font-weight: 400;
+}
+
 .title {
   font-family: var(--primary-font-style);
   font-weight: 400;
@@ -43,6 +52,10 @@ body {
 
 nav {
   background-color: var(--accent2-color);
+}
+
+nav a {
+  display: flex;
 }
 
 .head-con {
