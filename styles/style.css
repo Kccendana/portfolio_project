@@ -281,7 +281,7 @@ ul li {
   background-color: var(--primary-color);
   background-repeat: no-repeat;
   color: var(--background-color);
-  background-position: top 20% right;
+  background-position: top 380px right;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
