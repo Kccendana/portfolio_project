@@ -383,3 +383,16 @@ ul li {
   background-color: var(--accent6-color);
   border: none;
 }
+
+footer {
+  padding: 15px;
+  height: 72px;
+  border-top: 1px solid var(--accent5-color);
+  justify-content: center;
+}
+
+.f-social-media {
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
