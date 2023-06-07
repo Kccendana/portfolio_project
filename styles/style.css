@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 :root {
@@ -59,23 +61,41 @@ body {
   flex-direction: column;
 }
 
-nav {
+header {
   background-color: var(--accent2-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2.25em 0.75em 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 nav a {
   display: flex;
 }
 
-.head-con {
-  padding: 1em 2.25em 0.75em 1.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+li a {
+  cursor: pointer;
 }
 
-.head-con img {
+header img {
   height: 24px;
+}
+
+.desktop-view-links li {
+  display: none;
+  color: var(--background-color);
+  font-family: var(--font4);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.desktop-view-links img {
+  width: 22px;
 }
 
 .nav-button {
@@ -99,6 +119,8 @@ nav a {
   background-position: right bottom -16%;
   display: flex;
   flex-direction: column;
+  padding: 7.5em 1.5em;
+  width: 100%;
 }
 
 .pad-24-120 {
@@ -140,13 +162,30 @@ nav a {
 .work-section {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 7.5em 1.5em;
+}
+
+.work-title {
+  grid-column: 1/-1;
 }
 
 .work-title h3 {
   font-size: 2.5em;
   line-height: 52px;
+}
+
+.multi-post-con {
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
+  grid-column: 1/-1;
+}
+
+.multi-post-stories {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .mt-80 {
@@ -157,27 +196,11 @@ nav a {
   font-size: 2em;
 }
 
-.multi-post-con {
-  display: flex;
-  flex-direction: column;
-}
-
-.multi-post-stories {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 1.5em;
-}
-
 .font-body-reg {
   font-family: var(--font4);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-}
-
-ul li {
-  list-style: none;
 }
 
 .skill-lists li {
@@ -193,7 +216,7 @@ ul li {
 
 .skill-lists {
   display: flex;
-  justify-content: space-between;
+  gap: 0.75em;
 }
 
 .button {
@@ -207,6 +230,7 @@ ul li {
   color: var(--background-color);
   border: none;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -247,6 +271,9 @@ ul li {
 .card-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 2.25em;
+  column-gap: 1.5em;
+  grid-column: 1/-1;
 }
 
 .card {
@@ -256,15 +283,39 @@ ul li {
   display: flex;
   flex-direction: column;
   color: var(--background-color);
-  gap: 12px;
-  justify-content: flex-end;
+  margin-top: 1.5em;
+  height: 435px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
 
 .card-works {
-  padding: 4.5em 19px 0 13px;
+  padding: 4.5em 19px 1em 13px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 0.75em;
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
+  transition: 0.5s ease;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.card .button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card:hover .card-works {
+  top: 100%;
 }
 
 .card-works h5 {
@@ -276,24 +327,26 @@ ul li {
 }
 
 .about-me-section-con {
-  padding: 7.5em 1.5em 87.54px 1.5em;
-  background-image: url("../assets/mobile/illustration-about-me-mobile.svg");
   background-color: var(--primary-color);
-  background-repeat: no-repeat;
   color: var(--background-color);
-  background-position: top 380px right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  padding-bottom: 8.8em;
 }
 
 .about-me {
-  margin-bottom: 195px;
+  padding: 7.5em 1.5em 87.54px 1.5em;
+  background-image: url("../assets/mobile/illustration-about-me-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top 380px right;
+  height: 80vh;
 }
 
 .about-me h3 {
   font-size: 4.5em;
   color: var(--accent-color);
+}
+
+.skills-con {
+  padding: 0 1.5em;
 }
 
 .m24-0 {
@@ -336,6 +389,7 @@ ul li {
 .skill-wrapper {
   flex-direction: column;
   gap: 2.75em;
+  justify-content: space-between;
 }
 
 .get-in-touch {
