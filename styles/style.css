@@ -338,6 +338,21 @@ ul li {
   gap: 2.75em;
 }
 
+.get-in-touch {
+  padding: 69px 24px 78px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 69px;
+}
+
+.invitation {
+  text-align: center;
+  font-family: var(--font4);
+  font-weight: 700;
+  font-size: 2em;
+  color: var(--accent4-color);
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -367,4 +382,17 @@ ul li {
   color: var(--accent2-color);
   background-color: var(--accent6-color);
   border: none;
+}
+
+footer {
+  padding: 15px;
+  height: 72px;
+  border-top: 1px solid var(--accent5-color);
+  justify-content: center;
+}
+
+.f-social-media {
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
 }
