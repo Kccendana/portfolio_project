@@ -97,6 +97,16 @@
     background-position: top 45% right;
   }
 
+  .about-me h3 {
+    font-size: 4.5em;
+    line-height: 81.5px;
+  }
+
+  .about-me p {
+    font-size: 1.25em;
+    line-height: 32px;
+  }
+
   .skill-wrapper {
     flex-direction: row;
     padding: 0 8.4em;
