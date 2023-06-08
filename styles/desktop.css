@@ -1,0 +1,144 @@
+@media only screen and (min-width: 49em) {
+  header {
+    padding: 26px 154px;
+  }
+
+  .desktop-view-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    width: 255px;
+    height: 40px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .desktop-view-links li {
+    display: block;
+  }
+
+  .desktop-view-links li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .home-intro {
+    background-image: url(../assets/mobile/Illustration-header.svg);
+    background-size: contain;
+    background-position: right bottom 10%;
+    flex-direction: row-reverse;
+    gap: 87px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .intro-wrap {
+    width: 550px;
+  }
+
+  .intro-wrap p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .intro-wrap h1 {
+    font-size: 4.5em;
+    line-height: 81.5px;
+  }
+
+  .intro-wrap h2 {
+    font-size: 2em;
+    line-height: 2.75em;
+  }
+
+  .social-media {
+    flex-direction: column;
+    width: 17.99px;
+    height: 210px;
+  }
+
+  .work-section {
+    padding: 8.44em 8.8em;
+  }
+
+  .work-title {
+    display: flex;
+  }
+
+  .work-title h3 {
+    width: 45%;
+  }
+
+  .multi-post-con {
+    flex-direction: row;
+    gap: 1.5em;
+  }
+
+  .multi-con-img {
+    width: 55%;
+  }
+
+  .multi-post-stories {
+    width: 45%;
+  }
+
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-me {
+    padding: 7.5em 50% 87.54px 8.8em;
+    background-image: url('../assets/mobile/illustration-about-me.svg');
+    background-position: top 45% right;
+  }
+
+  .about-me h3 {
+    font-size: 4.5em;
+    line-height: 81.5px;
+  }
+
+  .about-me p {
+    font-size: 1.25em;
+    line-height: 32px;
+  }
+
+  .skill-wrapper {
+    flex-direction: row;
+    padding: 0 1.5em;
+  }
+
+  .s-lists {
+    text-align: left;
+  }
+
+  .skills {
+    align-items: flex-start;
+  }
+
+  .skills-con {
+    padding: 0 8.4em;
+  }
+
+  .get-in-touch {
+    flex-direction: row;
+    padding: 8.44em 8.8em;
+  }
+
+  .invitation {
+    width: 40%;
+    padding-right: 0.5em;
+    text-align: left;
+    font-size: 2.5em;
+    line-height: 52px;
+  }
+
+  .form {
+    width: 60%;
+    align-items: flex-start;
+  }
+}
