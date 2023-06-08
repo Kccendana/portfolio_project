@@ -109,6 +109,18 @@
 
   .skill-wrapper {
     flex-direction: row;
+    padding: 0 1.5em;
+  }
+
+  .s-lists {
+    text-align: left;
+  }
+
+  .skills {
+    align-items: flex-start;
+  }
+
+  .skills-con {
     padding: 0 8.4em;
   }
 
@@ -127,5 +139,6 @@
 
   .form {
     width: 60%;
+    align-items: flex-start;
   }
 }
