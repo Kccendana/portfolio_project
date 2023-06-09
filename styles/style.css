@@ -157,6 +157,15 @@ header img {
 .social-media img {
   width: 24px;
   height: 24px;
+  transition: 0.5s ease-in;
+}
+
+.social-media img:hover {
+  transform: scale(2);
+  z-index: 2;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  padding: 2px;
 }
 
 .work-section {
