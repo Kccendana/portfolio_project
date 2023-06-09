@@ -279,7 +279,7 @@ header img {
 .card {
   background-image: url("../assets/mobile/ImgPlaceholder.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   color: var(--background-color);
