@@ -92,6 +92,15 @@ header img {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
+  transition: all 1s ease-out 0.5s;
+}
+
+.desktop-view-links li a:hover {
+  border-bottom-width: 100%;
+  border-bottom-left-radius: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--accent-color);
+  padding-bottom: 5px;
 }
 
 .desktop-view-links img {
@@ -160,7 +169,12 @@ header img {
   transition: 0.5s ease-in;
 }
 
-.social-media img:hover {
+.f-social-media li a img {
+  transition: all 0.5s ease-in-out;
+}
+
+.social-media img:hover,
+.f-social-media li a img:hover {
   transform: scale(2);
   z-index: 2;
   background-color: var(--accent-color);
@@ -240,6 +254,7 @@ header img {
   border: none;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .button:hover {
