@@ -43,11 +43,6 @@ body {
   font-weight: 400;
 }
 
-.font4 {
-  font-family: var(--font4);
-  font-weight: 400;
-}
-
 .title {
   font-family: var(--primary-font-style);
   font-weight: 400;
@@ -130,10 +125,6 @@ header img {
   flex-direction: column;
   padding: 7.5em 1.5em;
   width: 100%;
-}
-
-.pad-24-120 {
-  padding: 7.5em 1.5em;
 }
 
 .home-intro h1 {
@@ -367,11 +358,10 @@ header img {
 }
 
 .about-me {
-  padding: 7.5em 1.5em 87.54px 1.5em;
+  padding: 7.5em 1.5em 13em 1.5em;
   background-image: url("../assets/mobile/illustration-about-me-mobile.svg");
   background-repeat: no-repeat;
   background-position: top 380px right;
-  height: 80vh;
 }
 
 .about-me h3 {
