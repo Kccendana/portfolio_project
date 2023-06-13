@@ -305,9 +305,6 @@ header img {
   margin-top: 1.5em;
   height: 435px;
   cursor: pointer;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
 }
 
 .card-works {
@@ -320,19 +317,6 @@ header img {
   background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
   background-position: left 10px bottom 0;
   transition: 0.5s ease;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.card .button {
-  position: absolute;
-  bottom: -52px;
-  left: 0;
-  right: 0;
-  transition: 0.5s ease;
 }
 
 .card:hover {
@@ -340,7 +324,7 @@ header img {
 }
 
 .card:hover .card-works {
-  top: 100%;
+  bottom: -100%;
 }
 
 .card:hover .button {

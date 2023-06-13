@@ -91,6 +91,28 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .card {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .card-works {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .card .button {
+    position: absolute;
+    bottom: -52px;
+    left: 0;
+    right: 0;
+    transition: 0.5s ease;
+  }
+
   .about-me {
     padding: 7.5em 50% 9.4em 8.8em;
     background-image: url('../assets/mobile/illustration-about-me.svg');
