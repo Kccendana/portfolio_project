@@ -80,7 +80,7 @@ header img {
   height: 24px;
 }
 
-.desktop-view-links li {
+.desktop-view-links {
   display: none;
   color: var(--background-color);
   font-family: var(--font4);
@@ -88,6 +88,29 @@ header img {
   font-size: 15px;
   line-height: 20px;
   transition: all 1s ease-out 0.5s;
+}
+
+.desktop-view-links.show {
+  position: absolute;
+  top: 1.5em;
+  background-color: var(--accent2-color);
+  color: var(--accent8-color);
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop-view-links.show > li > a {
+  color: var(--accent8-color);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  cursor: pointer;
 }
 
 .desktop-view-links li a:hover {
