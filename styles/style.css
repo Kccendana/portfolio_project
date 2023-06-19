@@ -84,6 +84,10 @@ header img {
   visibility: hidden;
 }
 
+.navMenu.active a {
+  color: var(--accent-color);
+}
+
 .desktop-view-links {
   display: none;
   color: var(--background-color);
@@ -105,6 +109,7 @@ header img {
   display: flex;
   flex-direction: column;
   padding-left: 1em;
+  padding-right: 1em;
   padding-top: 2em;
 }
 
