@@ -3,7 +3,8 @@
     padding: 26px 154px;
   }
 
-  .desktop-view-links, .desktop-view-links.show {
+  .desktop-view-links,
+  .desktop-view-links.show {
     display: flex;
     justify-content: space-between;
     gap: 32px;
