@@ -3,7 +3,7 @@
     padding: 26px 154px;
   }
 
-  .desktop-view-links {
+  .desktop-view-links, .desktop-view-links.show {
     display: flex;
     justify-content: space-between;
     gap: 32px;
@@ -20,6 +20,10 @@
   .desktop-view-links li a {
     text-decoration: none;
     color: #fff;
+  }
+
+  .desktop-view-links.show li:last-child {
+    display: block;
   }
 
   .nav-button {

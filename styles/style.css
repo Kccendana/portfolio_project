@@ -92,7 +92,7 @@ header img {
 
 .desktop-view-links.show {
   position: absolute;
-  top: 1.5em;
+  top: 3.5em;
   background-color: var(--accent2-color);
   color: var(--accent8-color);
   width: 100%;
@@ -100,7 +100,8 @@ header img {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 0.5em;
+  padding-top: 2em;
 }
 
 .desktop-view-links.show > li > a {
@@ -111,6 +112,13 @@ header img {
   font-size: 32px;
   line-height: 44px;
   cursor: pointer;
+  padding-left: 0.5em;
+  border-bottom: 1px solid var(--accent7-color);
+  margin-bottom: 1em;
+}
+
+.desktop-view-links.show li:last-child{
+  display: none;
 }
 
 .desktop-view-links li a:hover {
