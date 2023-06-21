@@ -1,4 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"]  */
 const navButton = document.querySelector('.nav-button');
 const navList = document.querySelector('.desktop-view-links');
 const navMenu = document.querySelectorAll('.navMenu');
