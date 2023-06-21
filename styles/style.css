@@ -600,3 +600,9 @@ footer {
 .desktop-view-links.show li:last-child {
   display: none;
 }
+
+.error-message {
+  color: var(--accent-color);
+  font-size: 1em;
+  font-family: var(--font4);
+}
