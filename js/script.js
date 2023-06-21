@@ -19,16 +19,6 @@ window.onresize = () => { if (window.innerWidth > 760) navList.classList.remove(
 
 const projectsLists = [
   {
-    name: 'Keeping track of hundreds  of components website',
-    image: 'assets/mobile/SnapshootPortfolio.svg',
-    imageDescription: 'Snapshoot portfolio',
-    description:
-    ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s."],
-    techList: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
     name: 'Multi-Post Stories',
     image: 'assets/mobile/ImgPlaceholder-desk.svg',
     imageDescription: 'Img Placeholder',
@@ -98,6 +88,48 @@ const projectsLists = [
     sourceLink: '#',
   },
 ];
+
+const mainProject = document.querySelector('#multi-post-con');
+const cardWrapper = document.querySelector('.card-wrapper');
+
+projectsLists.forEach((project , index) => {
+  if (index === 0) {
+    
+    const techList = project.techList.map((list) =>  `<li>${list}</li>`).join('');
+
+    const mainProjectDisplay = `<img class="multi-con-img" src="${project.image}" alt="${project.imageDescription}">
+    <div class="multi-post-stories ">
+        <h4 class="title sub-title">${project.name}</h4>
+        <p class="font-body-reg">${project.description}</p>
+        <ul class="skill-lists border-1 w-314">
+            ${techList}
+        </ul>
+        <button class="see-proj${index + 1} button w-135">See project</button>`
+
+        mainProject.innerHTML = `<div class="multi-post-con" id="multi-post-con">${mainProjectDisplay}</div>`
+  }else{
+    const techList = project.techList.map((list) =>  `<li>${list}</li>`).join('');
+
+    const displayProjectcards = ` 
+    <div class="card-works">
+        <h5 class="title">${project.name}</h5>
+        <p class="font-body-reg">${project.description}</p>
+        <ul class="skill-lists w-247 bg-list">
+        ${techList}
+        </ul>
+      </div>
+      <button class="see-proj${index + 1} button w-100">See Project</button>`
+
+    const card = document.createElement('div');
+    card.classList.add('card');
+    card.style.backgroundImage = `url(${project.image})`;
+    card.innerHTML = displayProjectcards;
+
+    cardWrapper.appendChild(card);
+
+  }
+});
+
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.close-button');
 
