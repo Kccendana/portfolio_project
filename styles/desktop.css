@@ -168,4 +168,29 @@
     width: 60%;
     align-items: flex-start;
   }
+
+  /* modal */
+  .links {
+    margin-top: 4em;
+  }
+
+  .modal-container {
+    padding: 1rem;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  .modal-body {
+    flex-direction: row;
+  }
+
+  .modal-image {
+    width: 60%;
+    height: auto;
+  }
+
+  .project-description-container {
+    width: 40%;
+  }
 }

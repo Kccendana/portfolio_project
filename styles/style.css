@@ -31,6 +31,7 @@ img {
 body {
   background-color: var(--background-color);
   min-width: 375px;
+  position: relative;
 }
 
 .font2 {
@@ -56,6 +57,13 @@ body {
   flex-direction: column;
 }
 
+.font-body-reg {
+  font-family: var(--font4);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 header {
   background-color: var(--accent2-color);
   display: flex;
@@ -65,7 +73,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 50;
 }
 
 nav a {
@@ -252,19 +260,96 @@ header img {
   gap: 12px;
 }
 
+.modal-container {
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  margin: 1rem 1rem;
+  background-color: var(--background-color);
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.modal-title {
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.modal-body {
+  gap: 25px;
+  flex-direction: column;
+}
+
+.project-description {
+  flex-direction: column;
+  line-height: 30px;
+  gap: 2em;
+}
+
+.modal.modal-close {
+  display: none;
+  cursor: pointer;
+}
+
+.modal-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.modal.modal-open {
+  display: block;
+}
+
+.tech-container.skill-lists {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+section.modal {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.1rem);
+  transition: all 0.5s ease;
+}
+
+.name-container {
+  position: relative;
+}
+
+.links {
+  margin-top: 1.5em;
+  gap: 0.75em;
+}
+
+img.close-button {
+  width: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.img-links {
+  width: 18px;
+}
+
+.name {
+  font-size: 2em;
+  line-height: 44px;
+}
+
 .mt-80 {
   margin-top: 5em;
 }
 
 .sub-title {
   font-size: 2em;
-}
-
-.font-body-reg {
-  font-family: var(--font4);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
 }
 
 .skill-lists li {
