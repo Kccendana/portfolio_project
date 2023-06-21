@@ -170,28 +170,21 @@
   }
 
   /* modal */
+  section.modal {
+    padding: 7em 8.875em;
+  }
+
   .links {
     margin-top: 4em;
   }
 
   .modal-container {
-    padding: 1rem;
-    max-width: 1156px;
+    padding: 1.75em;
+    width: 1156px;
     margin: auto;
-    margin-top: 10%;
-    height: 631px;
   }
 
   .modal-body {
     flex-direction: row;
-  }
-
-  .modal-image {
-    width: 60%;
-    height: 90%;
-  }
-
-  .project-description-container {
-    width: 40%;
   }
 }

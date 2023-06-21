@@ -262,11 +262,12 @@ header img {
 
 .modal-container {
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  margin: 1rem 1rem;
-  background-color: var(--background-color);
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  background-color: var(--background-color);
+  height: 90%;
+  overflow-y: auto;
 }
 
 .modal-title {
@@ -287,45 +288,53 @@ header img {
 
 .modal.modal-close {
   display: none;
-  cursor: pointer;
-}
-
-.modal-image {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover;
 }
 
 .modal.modal-open {
   display: block;
 }
 
-.tech-container.skill-lists {
-  font-size: 13px;
-  line-height: 16px;
-}
-
 section.modal {
   z-index: 100;
   position: fixed;
   display: flex;
-  justify-content: center;
-  align-items: center;
   top: 0;
+  right: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.683);
   backdrop-filter: blur(0.1rem);
   transition: all 0.5s ease;
+  padding: 3.75em 1em;
 }
 
 .name-container {
   position: relative;
 }
 
+.button {
+  background-color: var(--accent-color);
+  padding: 0.75em;
+  font-family: var(--font4);
+  font-weight: 700;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 17px;
+  color: var(--background-color);
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.links .button {
+  gap: 1em;
+}
+
 .links {
-  margin-top: 1.5em;
   gap: 0.75em;
+  margin-top: 1em;
 }
 
 img.close-button {
@@ -333,6 +342,7 @@ img.close-button {
   position: absolute;
   right: 0;
   top: 0;
+  cursor: pointer;
 }
 
 .img-links {
@@ -366,21 +376,6 @@ img.close-button {
 .skill-lists {
   display: flex;
   gap: 0.75em;
-}
-
-.button {
-  background-color: var(--accent-color);
-  padding: 0.75em;
-  font-family: var(--font4);
-  font-weight: 700;
-  line-height: 1.5em;
-  text-align: center;
-  font-size: 17px;
-  color: var(--background-color);
-  border: none;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
 }
 
 .button:hover {
@@ -592,6 +587,14 @@ footer {
   width: 200px;
   justify-content: space-between;
   align-items: center;
+}
+
+.tech-container.skill-lists li {
+  font-size: 13px;
+  line-height: 16px;
+  font-family: var(--font3);
+  font-style: normal;
+  font-weight: 600;
 }
 
 .desktop-view-links.show li:last-child {
