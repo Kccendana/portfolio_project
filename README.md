@@ -112,11 +112,17 @@ To run the project, open it through live server or double click the index.html
 - Twitter: [@kc_telyn](https://twitter.com/kc_telyn)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/katherinecendana/)
 
-👤 Sudipta Majumder
+👤 **Sudipta Majumder**
 
 - GitHub: [@githubhandle](https://github.com/Tupai566)
 - Twitter: [@twitterhandle](https://twitter.com/imtupai566)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/tupai-mazumder-16109a243/)
+
+👤 **Uduekwe Christopher Chukwudi**
+
+- GitHub: [@githubhandle](https://github.com/chudisoft)
+- Twitter: [@twitterhandle](https://twitter.com/chrisuduekwe)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/christopher-uduekwe)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
