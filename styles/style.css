@@ -424,7 +424,7 @@ img.close-button {
 .card {
   background-image: url("../assets/mobile/ImgPlaceholder.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   color: var(--background-color);
