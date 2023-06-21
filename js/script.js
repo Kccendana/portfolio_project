@@ -130,38 +130,10 @@ function ShowModal(index) {
   });
 }
 
-const seeProj1 = document.querySelector('.see-proj1');
-const seeProj2 = document.querySelector('.see-proj2');
-const seeProj3 = document.querySelector('.see-proj3');
-const seeProj4 = document.querySelector('.see-proj4');
-const seeProj5 = document.querySelector('.see-proj5');
-const seeProj6 = document.querySelector('.see-proj6');
-const seeProj7 = document.querySelector('.see-proj7');
+const seeProjButtons = document.querySelectorAll('[class^="see-proj"]');
 
-seeProj1.addEventListener('click', () => {
-  ShowModal(0);
-});
-
-seeProj2.addEventListener('click', () => {
-  ShowModal(1);
-});
-
-seeProj3.addEventListener('click', () => {
-  ShowModal(2);
-});
-
-seeProj4.addEventListener('click', () => {
-  ShowModal(3);
-});
-
-seeProj5.addEventListener('click', () => {
-  ShowModal(4);
-});
-
-seeProj6.addEventListener('click', () => {
-  ShowModal(5);
-});
-
-seeProj7.addEventListener('click', () => {
-  ShowModal(6);
+seeProjButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    ShowModal(index);
+  });
 });
