@@ -166,3 +166,14 @@ seeProjButtons.forEach((button, index) => {
     ShowModal(index);
   });
 });
+
+const errorMessage = document.querySelector('.error-message');
+const form = document.querySelector('.form');
+const email = document.querySelector('#email');
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    errorMessage.textContent = 'Please enter email in lowercase.';
+    email.value = email.value.toLowerCase();
+  }
+});
