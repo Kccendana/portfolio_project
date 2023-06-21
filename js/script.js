@@ -40,7 +40,7 @@ const projectsLists = [
     sourceLink: '#',
   }, {
     name: 'Profesional Art Printing Data More',
-    image: 'assets/mobile/ImgPlaceholder.svg',
+    image: 'assets/mobile/Portfolio2.svg',
     imageDescription: 'Image Design',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
@@ -70,7 +70,7 @@ const projectsLists = [
   },
   {
     name: 'Profesional Art Printing Data More',
-    image: 'assets/mobile/ImgPlaceholder.svg',
+    image: 'assets/mobile/Portfolio2.svg',
     imageDescription: 'Image Design',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',

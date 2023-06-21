@@ -176,9 +176,10 @@
 
   .modal-container {
     padding: 1rem;
-    max-width: 80%;
+    max-width: 1156px;
     margin: auto;
     margin-top: 10%;
+    height: 631px;
   }
 
   .modal-body {
@@ -187,7 +188,7 @@
 
   .modal-image {
     width: 60%;
-    height: auto;
+    height: 90%;
   }
 
   .project-description-container {
