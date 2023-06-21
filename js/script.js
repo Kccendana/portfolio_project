@@ -92,10 +92,9 @@ const projectsLists = [
 const mainProject = document.querySelector('#multi-post-con');
 const cardWrapper = document.querySelector('.card-wrapper');
 
-projectsLists.forEach((project , index) => {
+projectsLists.forEach((project, index) => {
   if (index === 0) {
-    
-    const techList = project.techList.map((list) =>  `<li>${list}</li>`).join('');
+    const techList = project.techList.map((list) => `<li>${list}</li>`).join('');
 
     const mainProjectDisplay = `<img class="multi-con-img" src="${project.image}" alt="${project.imageDescription}">
     <div class="multi-post-stories ">
@@ -104,11 +103,11 @@ projectsLists.forEach((project , index) => {
         <ul class="skill-lists border-1 w-314">
             ${techList}
         </ul>
-        <button class="see-proj${index + 1} button w-135">See project</button>`
+        <button class="see-proj${index + 1} button w-135">See project</button>`;
 
-        mainProject.innerHTML = `<div class="multi-post-con" id="multi-post-con">${mainProjectDisplay}</div>`
-  }else{
-    const techList = project.techList.map((list) =>  `<li>${list}</li>`).join('');
+        mainProject.innerHTML = `<div class="multi-post-con" id="multi-post-con">${mainProjectDisplay}</div>`;
+  } else {
+    const techList = project.techList.map((list) => `<li>${list}</li>`).join('');
 
     const displayProjectcards = ` 
     <div class="card-works">
@@ -118,15 +117,13 @@ projectsLists.forEach((project , index) => {
         ${techList}
         </ul>
       </div>
-      <button class="see-proj${index + 1} button w-100">See Project</button>`
+      <button class="see-proj${index + 1} button w-100">See Project</button>`;
 
     const card = document.createElement('div');
     card.classList.add('card');
     card.style.backgroundImage = `url(${project.image})`;
     card.innerHTML = displayProjectcards;
-
     cardWrapper.appendChild(card);
-
   }
 });
 
