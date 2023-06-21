@@ -1,7 +1,6 @@
-/* eslint linebreak-style: ["error", "windows"] */
-const navButton = document.querySelector('.nav-button'); // \n
-const navList = document.querySelector('.desktop-view-links');
-const navMenu = document.querySelectorAll('.navMenu');
+const navButton = document.querySelector('.nav-button');// \r\n
+const navList = document.querySelector('.desktop-view-links');// \r\n
+const navMenu = document.querySelectorAll('.navMenu');// \r\n
 const logo = document.querySelector('.logo');
 
 navButton.addEventListener('click', () => {
