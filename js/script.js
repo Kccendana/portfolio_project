@@ -2,13 +2,6 @@ const navButton = document.querySelector('.nav-button');
 const navList = document.querySelector('.desktop-view-links');
 const navMenu = document.querySelectorAll('.navMenu');
 const logo = document.querySelector('.logo');
-const seeProj1 = document.querySelector('.see-proj1');
-const seeProj2 = document.querySelector('.see-proj2');
-const seeProj3 = document.querySelector('.see-proj3');
-const seeProj4 = document.querySelector('.see-proj4');
-const seeProj5 = document.querySelector('.see-proj5');
-const seeProj6 = document.querySelector('.see-proj6');
-const seeProj7 = document.querySelector('.see-proj7');
 
 navButton.addEventListener('click', () => {
   navList.classList.toggle('show');
@@ -136,6 +129,14 @@ function ShowModal(index) {
     techList.appendChild(li);
   });
 }
+
+const seeProj1 = document.querySelector('.see-proj1');
+const seeProj2 = document.querySelector('.see-proj2');
+const seeProj3 = document.querySelector('.see-proj3');
+const seeProj4 = document.querySelector('.see-proj4');
+const seeProj5 = document.querySelector('.see-proj5');
+const seeProj6 = document.querySelector('.see-proj6');
+const seeProj7 = document.querySelector('.see-proj7');
 
 seeProj1.addEventListener('click', () => {
   ShowModal(0);
