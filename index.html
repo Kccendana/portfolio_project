@@ -142,7 +142,7 @@
             <div class="invitation">
                 <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
             </div>
-            <form class="form"  action="https://formspree.io/f/myyaqbkd"
+            <form class="form" 
             method="POST">
                 <input
                       type="text"
@@ -153,6 +153,7 @@
                       required
                     />
                     <input
+                    id="email"
                     type="email"
                     name="email"
                     class="form-input"
@@ -165,6 +166,7 @@
                   maxlength="500"
                   placeholder="Write me something..."
                 ></textarea>
+                    <span class="error-message"></span>
                   <button class="button" type="submit" id="submit" class="button w-247">
                     Get in touch
                   </button>
