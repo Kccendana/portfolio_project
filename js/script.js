@@ -173,6 +173,7 @@ const email = document.querySelector('#email');
 const userName = document.querySelector('#name');
 const message = document.querySelector('#message');
 const formDatakey = 'formData';
+
 let formObject = {
   userName: '',
   email: '',
@@ -191,6 +192,9 @@ form.addEventListener('submit', (event) => {
     email.value = email.value.toLowerCase();
   }
 });
+form.addEventListener('reset', () => { 
+  localStorage.removeItem(formDatakey);
+});
 
 window.addEventListener('load', () => {
   const dataStored = localStorage.getItem(formDatakey);
@@ -201,4 +205,3 @@ window.addEventListener('load', () => {
     message.value = formObject.message;
   }
 });
-// local storage
