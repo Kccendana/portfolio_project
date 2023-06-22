@@ -145,6 +145,7 @@
             <form class="form" action="https://formspree.io/f/myyaqbkd"
             method="POST">
                 <input 
+                      id="name"
                       type="text"
                       name="name"
                       class="form-input"
@@ -161,15 +162,21 @@
                     required
                   />
                   <textarea
+                  id="message"
                   class="input-text"
                   name="message"
                   maxlength="500"
                   placeholder="Write me something..."
                 ></textarea>
                     <span class="error-message"></span>
-                  <button class="button" type="submit" id="submit" class="button w-247">
-                    Get in touch
-                  </button>
+                  <div class="buttons d-flex">
+                    <button type="submit" id="submit" class="button w-247">
+                        Get in touch
+                      </button>
+                      <button type="reset" id="reset" class="button w-247">
+                        Reset
+                      </button>
+                  </div>
             </form>
         </section>
         <div class="modal">

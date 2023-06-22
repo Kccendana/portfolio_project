@@ -170,10 +170,44 @@ seeProjButtons.forEach((button, index) => {
 const errorMessage = document.querySelector('.error-message');
 const form = document.querySelector('.form');
 const email = document.querySelector('#email');
+const userName = document.querySelector('#name');
+const message = document.querySelector('#message');
+const formDatakey = 'formData';
+
+let formObject = {
+  userName: '',
+  email: '',
+  message: '',
+};
+
+function SaveFormData() {
+  formObject.userName = userName.value;
+  formObject.email = email.value;
+  formObject.message = message.value;
+  localStorage.setItem(formDatakey, JSON.stringify(formObject));
+}
+
+email.addEventListener('input', SaveFormData);
+userName.addEventListener('input', SaveFormData);
+message.addEventListener('input', SaveFormData);
+
 form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLowerCase()) {
     event.preventDefault();
     errorMessage.textContent = 'Please enter email in lowercase.';
     email.value = email.value.toLowerCase();
+  }
+});
+form.addEventListener('reset', () => {
+  localStorage.removeItem(formDatakey);
+});
+
+window.addEventListener('load', () => {
+  const dataStored = localStorage.getItem(formDatakey);
+  if (dataStored !== null) {
+    formObject = JSON.parse(dataStored);
+    email.value = formObject.email;
+    userName.value = formObject.userName;
+    message.value = formObject.message;
   }
 });
