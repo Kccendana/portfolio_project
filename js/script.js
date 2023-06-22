@@ -192,7 +192,7 @@ form.addEventListener('submit', (event) => {
     email.value = email.value.toLowerCase();
   }
 });
-form.addEventListener('reset', () => { 
+form.addEventListener('reset', () => {
   localStorage.removeItem(formDatakey);
 });
 
