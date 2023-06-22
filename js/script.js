@@ -170,20 +170,20 @@ seeProjButtons.forEach((button, index) => {
 const errorMessage = document.querySelector('.error-message');
 const form = document.querySelector('.form');
 const email = document.querySelector('#email');
-const name = document.querySelector('#name');
+const userName = document.querySelector('#name');
 const message = document.querySelector('#message');
 const formDatakey = 'formData';
-const formObject = {
-  userName : '',
-  email : '',
+let formObject = {
+  userName: '',
+  email: '',
   message: '',
-}
- 
+};
+
 form.addEventListener('submit', (event) => {
-  formObject.name = userName.value;
+  formObject.userName = userName.value;
   formObject.email = email.value;
   formObject.message = message.value;
-  localStorage.setItem(formDatakey , JSON.stringify(formObject));
+  localStorage.setItem(formDatakey, JSON.stringify(formObject));
 
   if (email.value !== email.value.toLowerCase()) {
     event.preventDefault();
@@ -192,4 +192,13 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+window.addEventListener('load', () => {
+  const dataStored = localStorage.getItem(formDatakey);
+  if (dataStored !== null) {
+    formObject = JSON.parse(dataStored);
+    email.value = formObject.email;
+    userName.value = formObject.userName;
+    message.value = formObject.message;
+  }
+});
 // local storage
