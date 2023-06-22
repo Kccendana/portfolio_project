@@ -180,12 +180,18 @@ let formObject = {
   message: '',
 };
 
-form.addEventListener('submit', (event) => {
+function SaveFormData() {
   formObject.userName = userName.value;
   formObject.email = email.value;
   formObject.message = message.value;
   localStorage.setItem(formDatakey, JSON.stringify(formObject));
+}
 
+email.addEventListener('input', SaveFormData);
+userName.addEventListener('input', SaveFormData);
+message.addEventListener('input', SaveFormData);
+
+form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLowerCase()) {
     event.preventDefault();
     errorMessage.textContent = 'Please enter email in lowercase.';
