@@ -1,5 +1,5 @@
 const navButton = document.querySelector('.nav-button');// \r\n
-const navList = document.querySelector('.desktop-view-links');// \r\n
+const navList = document.querySelector('.desKtop-view-links');// \r\n
 const navMenu = document.querySelectorAll('.navMenu');// \r\n
 const logo = document.querySelector('.logo');
 
