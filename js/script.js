@@ -19,23 +19,23 @@ window.onresize = () => { if (window.innerWidth > 760) navList.classList.remove(
 
 const projectsLists = [
   {
-    name: 'Multi-Post Stories',
-    image: 'assets/mobile/ImgPlaceholder-desk.svg',
-    imageDescription: 'Img Placeholder',
+    name: 'Mindful Wellness Event 2023',
+    image: 'assets/mobile/rsz_capstone_project.jpg',
+    imageDescription: 'capstone project mindful wellness',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    techList: ['HTML', 'CSS', 'Bootstrap', 'Ruby'],
-    liveLink: '#',
-    sourceLink: '#',
+      'Wellness Advocate Annual Convention event page. This capstone project built with JavaScript, HTML and CSS.',
+    techList: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://kccendana.github.io/capstsone-project/',
+    sourceLink: 'https://github.com/Kccendana/capstsone-project',
   }, {
-    name: 'Profesional Art Printing Data More',
-    image: 'assets/mobile/Portfolio2.svg',
-    imageDescription: 'Image Design',
+    name: 'Awesome Books App',
+    image: 'assets/mobile/rsz_awesome-books.jpg',
+    imageDescription: 'awesome books launch image',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    techList: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: '#',
-    sourceLink: '#',
+      'AwesomeBooks is a user-friendly application that allows effortless addition and removal of books from a personalized list. Built with HTML, CSS, and JavaScript modules, it ensures a seamless and intuitive experience.',
+    techList: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://kccendana.github.io/awesome-booksEs6/',
+    sourceLink: 'https://github.com/Kccendana/awesome-booksEs6',
   },
   {
     name: 'Data Dashboard Healthcare',
@@ -147,8 +147,8 @@ function ShowModal(index) {
   modalTitle.textContent = project.name;
   modalImage.setAttribute('src', project.image);
   projectDescription.textContent = project.description;
-  seeLive.setAttribute('href', project.link);
-  seeSource.setAttribute('href', project.source);
+  seeLive.setAttribute('href', project.liveLink);
+  seeSource.setAttribute('href', project.sourceLink);
 
   techList.innerHTML = '';
 
