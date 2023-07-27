@@ -38,14 +38,14 @@ const projectsLists = [
     sourceLink: 'https://github.com/Kccendana/awesome-booksEs6',
   },
   {
-    name: 'Data Dashboard Healthcare',
-    image: 'assets/mobile/Portfolio3.svg',
-    imageDescription: 'Portfolio image',
+    name: 'QuoteGenerator App',
+    image: 'assets/mobile/quotegenerator1.jpg',
+    imageDescription: 'quoteGenerator image',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    techList: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: '#',
-    sourceLink: '#',
+      'quoteGenerator is an innovative website designed to provide you with an endless stream of inspiring quotes. Our platform not only generates thought-provoking quotes but also offers seamless integration with social media, enabling you to effortlessly share your favorite quotes on Twitter.',
+    techList: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://kccendana.github.io/quoteGenerator/',
+    sourceLink: 'https://github.com/Kccendana/quoteGenerator',
   },
   {
     name: 'Website Portfolio',
