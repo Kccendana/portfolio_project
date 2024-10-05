@@ -277,7 +277,8 @@ header img {
 
 .modal-body {
   gap: 25px;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .project-description {
