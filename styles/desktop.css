@@ -185,6 +185,6 @@
   }
 
   .modal-body {
-    flex-direction: row;
+    grid-template-columns: 2fr 1fr;
   }
 }
