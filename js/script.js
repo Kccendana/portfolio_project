@@ -19,6 +19,16 @@ window.onresize = () => { if (window.innerWidth > 760) navList.classList.remove(
 
 const projectsLists = [
   {
+    name: 'MK Italian Cuisine',
+    image: 'assets/mobile/MK-cuisine.jpg',
+    imageDescription: 'MK cuisine',
+    description:
+      'This website offers a curated selection of Italian dishes, allowing customers to explore, reserve, and leave comments on their favorite meals. Users can also like dishes, with all interactions and feedback securely stored using the Involvement API service.',
+    techList: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'https://italian-food.onrender.com/',
+    sourceLink: 'https://github.com/Mahdi-Niazi/MK-Italian-Cuisine',
+  },
+  {
     name: 'Mindful Wellness Event 2023',
     image: 'assets/mobile/rsz_capstone_project.jpg',
     imageDescription: 'capstone project mindful wellness',
@@ -27,7 +37,8 @@ const projectsLists = [
     techList: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://kccendana.github.io/capstsone-project/',
     sourceLink: 'https://github.com/Kccendana/capstsone-project',
-  }, {
+  }, 
+  {
     name: 'Awesome Books App',
     image: 'assets/mobile/rsz_awesome-books.jpg',
     imageDescription: 'awesome books launch image',
@@ -46,46 +57,6 @@ const projectsLists = [
     techList: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://kccendana.github.io/quoteGenerator/',
     sourceLink: 'https://github.com/Kccendana/quoteGenerator',
-  },
-  {
-    name: 'Website Portfolio',
-    image: 'assets/mobile/Portfolio.svg',
-    imageDescription: 'Portfolio image placeholder',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    techList: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    name: 'Profesional Art Printing Data More',
-    image: 'assets/mobile/Portfolio2.svg',
-    imageDescription: 'Image Design',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    techList: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    name: 'Data Dashboard Healthcare',
-    image: 'assets/mobile/Portfolio3.svg',
-    imageDescription: 'Portfolio image',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    techList: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    name: 'Website Portfolio',
-    image: 'assets/mobile/Portfolio3.svg',
-    imageDescription: 'Portfolio image placeholder',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    techList: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: '#',
-    sourceLink: '#',
   },
 ];
 
